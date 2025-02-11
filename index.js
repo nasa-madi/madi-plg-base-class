@@ -12,6 +12,8 @@ export class BasePlugin {
     this.uploads = options.uploads || [];
     this.description = options.description;
     this.makeRequest = options.makeRequest;
+    this.app = options.app;
+
     if(!this.description) throw new Error('Description is a required configuration field');
     this.validate()
   }
